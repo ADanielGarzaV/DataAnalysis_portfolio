@@ -87,6 +87,8 @@ Visualization	Power BI
 Libraries	Pandas, NumPy
 Other Skills	Data cleaning, Funnel analysis, KPI dashboards, Exploratory data analysis
 
+All Power BI dashboards are available in both .pbix (interactive) and .pdf (static) formats for easy access.
+
 💬 Contact
 danielgarza880@gmail.com
 https://www.linkedin.com/in/adanielgarzav/
