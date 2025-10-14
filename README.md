@@ -1,94 +1,108 @@
 # DataAnalysis_portfolio
-Portfolio project containing Exploratory Data Analysis (EDA), Funnel Analysis and Fullstack Project Analysis
 🧠 Data Analytics Portfolio — Daniel Garza
 
-Welcome to my Data Analytics Portfolio, where I explore real-world datasets using SQL, Python, and Power BI.
-Each project highlights a different part of the analytics process — from raw data cleaning to interactive visualization and storytelling.
+Welcome to my Data Analytics Portfolio, where I explore real-world datasets using SQL, Python, Power BI, and Flask.
+Each project demonstrates a key step in the analytics workflow — from data cleaning and SQL exploration to dashboard design and full-stack data integration.
 
 📊 Featured Projects
-🧩 1. E-Commerce Funnel Analysis (PostgreSQL + Power BI)
+🛒 1. Fullstack E-Commerce Funnel Analysis (PostgreSQL + Flask + Power BI)
 
 Files:
-eCommerce_funnel_analysis.sql
-View_to_Purchase_Funnel_Project.pdf
+ecommerce_funnel_analysis.sql · View_to_Purchase_Funnel_Project.pdf · ecommerce-funnel-app/ (Fullstack folder)
 
 Overview:
-Performed an end-to-end funnel analysis on 1M+ e-commerce behavioral records to identify where users drop off between view → cart → purchase.
-Key insights include an overall 11.9% total conversion rate and an average time-to-purchase of 7.9 minutes.
+Built an end-to-end e-commerce funnel analysis and web dashboard combining PostgreSQL, Flask API, and a frontend visualization.
+Analyzed over 1M user behavioral records to identify conversion rates and time-to-purchase patterns.
 
-Techniques & Tools:
-SQL CTEs, Window Functions, and Time Calculations
-Funnel breakdown by category & brand
-Power BI visualization with interactive funnel and KPI dashboard
+Highlights:
 
-Key Takeaway:
-Smartphones had the highest conversion (7.7%), while Samsung outperformed Apple with a better cart-to-purchase rate despite lower average price.
+SQL funnel logic for view → cart → purchase with CTEs and aggregations
+
+Flask REST API endpoints serving live JSON data (/api/funnel, /api/category, /api/brand)
+
+Frontend visualization using Plotly.js
+
+Power BI report for KPI and brand/category comparisons
+
+Key Insight:
+Smartphones led with a 7.7% conversion rate — Samsung outperformed Apple with a higher cart-to-purchase conversion despite lower average prices.
+
+Skills: SQL · Flask · REST API · PostgreSQL · Plotly.js · Power BI · Data Modeling
 
 🏡 2. Nashville Housing Data Cleaning (PostgreSQL / SQL Server)
-Files:
+
+File:
 Data Analyst Portfolio Project Nashville Housing.sql
 
 Overview:
-Cleaned and standardized the public Nashville Housing Dataset, fixing inconsistent date formats, nulls, and duplicated property entries.
-Split full addresses into city/state components and improved data integrity for downstream reporting.
+Cleaned and standardized the public Nashville Housing dataset — fixing inconsistent date formats, nulls, and duplicate entries.
+Split address fields and ensured data consistency for better analytics and reporting.
 
-Skills Demonstrated:
-Data cleaning, string manipulation, type conversion
-COALESCE, CTEs, and CASE logic for missing values
-SQL best practices for reusable and readable pipelines
+Skills: SQL Data Cleaning · String Manipulation · Type Conversion · COALESCE · CTEs · CASE Logic
 
 💉 3. COVID-19 Data Exploration & Vaccination Analysis
 
 Files:
-Data Analyst Portfolio Project Covid Deaths, percent Vaccinations.sql
-PowerBI_CovidDeaths_VisualizationProject.pdf
+Data Analyst Portfolio Project Covid Deaths, percent Vaccinations.sql · PowerBI_CovidDeaths_VisualizationProject.pdf
 
 Overview:
-Analyzed global COVID-19 cases, deaths, and vaccination trends to explore relationships between population, infection rates, and vaccine rollout.
+Explored public COVID-19 datasets using PostgreSQL and visualized insights in Power BI.
+Analyzed infection, death, and vaccination trends globally to understand relationships between population size and mortality.
 
 Highlights:
-SQL-based trend analysis using window functions and joins
-Created Power BI dashboards showing cases, mortality %, and vaccination progress by continent
+
+SQL window functions and joins for country-level trend analysis
+
+Interactive Power BI dashboard showing cases, deaths, and vaccination progress
 
 Key Insight:
-Europe and North America had the highest case ratios, but vaccination growth strongly correlated with lower mortality trends.
+Europe and North America had the highest case ratios, while vaccination growth strongly correlated with declining mortality rates.
 
-💻 4. Electronic Device Sales Visualization
-File: PowerBi_ElectronicDevicesSells_VisualizationProject.pdf
+Skills: SQL Analysis · Power BI · Data Visualization · Aggregations · Time Series Analysis
+
+💻 4. Electronic Device Sales Dashboard
+
+File:
+PowerBi_ElectronicDevicesSells_VisualizationProject.pdf
 
 Overview:
-Visualized product category sales and profit distribution across different regions using Power BI.
-Identified top-performing devices and analyzed revenue by price tier.
+Created a Power BI dashboard to analyze electronic product sales and profit across regions.
+Identified top-performing categories and revenue distribution by price tier.
 
-Skills: Data modeling, measures (DAX), and interactive Power BI design.
+Skills: Power BI · DAX Measures · KPI Design · Data Modeling
 
 🎮 5. Video Game Sales Dashboard
-File: PowerBi_VideogameSales_VisualizationProject.pdf
+
+File:
+PowerBi_VideogameSales_VisualizationProject.pdf
 
 Overview:
-Created a Power BI dashboard analyzing video game sales by genre, platform, and region.
-Highlighted global trends and the dominance of action and sports titles in revenue share.
+Developed a Power BI visualization to track video game sales by genre, platform, and region.
+Highlighted top markets and trends driving the gaming industry.
 
-🐍 6. Movie Data Cleaning with Python
-File: Python_DataCleaning_Movies_project.ipynb
+Skills: Power BI · Data Visualization · Storytelling with Data
+
+🎬 6. Movie Data Cleaning with Python
+
+File:
+Python_DataCleaning_Movies_project.ipynb
 
 Overview:
-Cleaned and prepared a raw movie dataset using Python (Pandas, NumPy).
-Standardized missing fields, extracted features, and prepared the dataset for machine learning or visualization use.
+Cleaned and transformed a raw movie dataset using Pandas and NumPy.
+Handled missing data, standardized formats, and prepared the dataset for machine learning or further analysis.
 
-Skills:
-Data cleaning, feature extraction, and exploratory data preprocessing.
+Skills: Python · Pandas · NumPy · Data Cleaning · Feature Engineering
 
 ⚙️ Tools & Technologies
 Category	Tools
-Languages	SQL, Python
-Databases	PostgreSQL, Microsoft SQL Server
-Visualization	Power BI
-Libraries	Pandas, NumPy
-Other Skills	Data cleaning, Funnel analysis, KPI dashboards, Exploratory data analysis
-
-All Power BI dashboards are available in both .pbix (interactive) and .pdf (static) formats for easy access.
-
+Languages	SQL · Python
+Databases	PostgreSQL · Microsoft SQL Server
+Visualization	Power BI · Plotly.js
+Backend	Flask · REST APIs
+Libraries	Pandas · NumPy
+Other Skills	Data Cleaning · Funnel Analysis · Dashboard Design · Exploratory Data Analysis
 💬 Contact
-danielgarza880@gmail.com
-https://www.linkedin.com/in/adanielgarzav/
+
+📧 danielgarza880@gmail.com
+
+🔗 LinkedIn — Daniel Garza https://www.linkedin.com/in/adanielgarzav/
