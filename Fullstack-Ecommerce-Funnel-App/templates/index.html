@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-commerce Funnel Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>🛒 E-commerce Funnel Dashboard</h1>
+    <button onclick="loadFunnelData()">🔄 Refresh Data</button>
+    <label for="filter">Choose a view:</label>
+<select id="filter">
+  <option value="funnel">Overall Funnel</option>
+  <option value="category">By Category</option>
+  <option value="brand">By Brand</option>
+</select>
+
+    <div id="chart"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
