@@ -6,7 +6,6 @@ Each project demonstrates a key step in the analytics workflow — from data cle
 
 📊 Featured Projects
 🛒 1. Fullstack E-Commerce Funnel Analysis (PostgreSQL + Flask + Power BI)
-
 Files:
 ecommerce_funnel_analysis.sql · View_to_Purchase_Funnel_Project.pdf · ecommerce-funnel-app/ (Fullstack folder)
 
@@ -15,13 +14,9 @@ Built an end-to-end e-commerce funnel analysis and web dashboard combining Postg
 Analyzed over 1M user behavioral records to identify conversion rates and time-to-purchase patterns.
 
 Highlights:
-
 SQL funnel logic for view → cart → purchase with CTEs and aggregations
-
 Flask REST API endpoints serving live JSON data (/api/funnel, /api/category, /api/brand)
-
 Frontend visualization using Plotly.js
-
 Power BI report for KPI and brand/category comparisons
 
 Key Insight:
@@ -30,7 +25,6 @@ Smartphones led with a 7.7% conversion rate — Samsung outperformed Apple with 
 Skills: SQL · Flask · REST API · PostgreSQL · Plotly.js · Power BI · Data Modeling
 
 🏡 2. Nashville Housing Data Cleaning (PostgreSQL / SQL Server)
-
 File:
 Data Analyst Portfolio Project Nashville Housing.sql
 
@@ -41,7 +35,6 @@ Split address fields and ensured data consistency for better analytics and repor
 Skills: SQL Data Cleaning · String Manipulation · Type Conversion · COALESCE · CTEs · CASE Logic
 
 💉 3. COVID-19 Data Exploration & Vaccination Analysis
-
 Files:
 Data Analyst Portfolio Project Covid Deaths, percent Vaccinations.sql · PowerBI_CovidDeaths_VisualizationProject.pdf
 
@@ -50,9 +43,7 @@ Explored public COVID-19 datasets using PostgreSQL and visualized insights in Po
 Analyzed infection, death, and vaccination trends globally to understand relationships between population size and mortality.
 
 Highlights:
-
 SQL window functions and joins for country-level trend analysis
-
 Interactive Power BI dashboard showing cases, deaths, and vaccination progress
 
 Key Insight:
@@ -61,7 +52,6 @@ Europe and North America had the highest case ratios, while vaccination growth s
 Skills: SQL Analysis · Power BI · Data Visualization · Aggregations · Time Series Analysis
 
 💻 4. Electronic Device Sales Dashboard
-
 File:
 PowerBi_ElectronicDevicesSells_VisualizationProject.pdf
 
@@ -72,7 +62,6 @@ Identified top-performing categories and revenue distribution by price tier.
 Skills: Power BI · DAX Measures · KPI Design · Data Modeling
 
 🎮 5. Video Game Sales Dashboard
-
 File:
 PowerBi_VideogameSales_VisualizationProject.pdf
 
@@ -83,7 +72,6 @@ Highlighted top markets and trends driving the gaming industry.
 Skills: Power BI · Data Visualization · Storytelling with Data
 
 🎬 6. Movie Data Cleaning with Python
-
 File:
 Python_DataCleaning_Movies_project.ipynb
 
