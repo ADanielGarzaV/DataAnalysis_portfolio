@@ -1,0 +1,113 @@
+🛍️ E-Commerce Funnel Analysis in SQL
+📘 Overview
+
+This project explores user behavior across an online store to understand how customers move through the purchase funnel — from viewing a product, to adding it to the cart, and finally completing a purchase.
+
+Using PostgreSQL, I performed a full funnel analysis on over 1 million user events, identifying key drop-off points, conversion rates, and engagement patterns.
+
+The project demonstrates my ability to work with large datasets, build multi-step analytical queries, and translate behavioral data into actionable insights.
+
+🧠 Key Business Question
+
+How efficiently does the online store convert product views into purchases, and which product categories or brands perform best?
+
+📊 Dataset Information
+
+Source: Kaggle — E-commerce Behavior Data from Multi-Category Store
+
+Size: ~1 million rows (subset from November 2019)
+
+Columns:
+| Column          | Description                                                 |
+| --------------- | ----------------------------------------------------------- |
+| `event_time`    | Timestamp of the user action                                |
+| `event_type`    | Type of interaction — `view`, `cart`, or `purchase`         |
+| `product_id`    | Unique product identifier                                   |
+| `category_code` | Product category hierarchy (e.g., `electronics.smartphone`) |
+| `brand`         | Product brand                                               |
+| `price`         | Product price at time of interaction                        |
+| `user_id`       | Unique user identifier                                      |
+| `user_session`  | Session ID for tracking user behavior                       |
+
+🧩 Analysis Process
+1️⃣ Data Exploration
+Counted event types (view, cart, purchase)
+Counted unique users per stage
+Verified data quality and consistency in timestamps and event types
+
+2️⃣ Funnel Conversion Metrics
+Used CTEs and aggregate queries to calculate:
+View → Cart conversion rate
+Cart → Purchase conversion rate
+Overall view → Purchase rate
+
+🧾 Example Output:
+| Stage    | Unique Users | Step Conversion | Overall Conversion |
+| -------- | ------------ | --------------- | ------------------ |
+| View     | 3,695,598    | —               | —                  |
+| Cart     | 826,323      | 22.4%           | 22.4%              |
+| Purchase | 441,638      | 53.4%           | 11.9%              |
+
+📉 Insight:
+Only 1 in 9 users who view a product end up purchasing — but over half of those who add to cart complete checkout.
+
+3️⃣ Time-to-Purchase Analysis
+Measured how long it takes (in minutes) for a user to move through each funnel stage using timestamps and SQL date functions.
+| Metric          | Average Time (min) |
+| --------------- | ------------------ |
+| View → Cart     | 4.89               |
+| Cart → Purchase | 3.02               |
+| View → Purchase | 7.91               |
+
+🕐 Insight:
+The average user completes their purchase within 8 minutes, suggesting a high-intent browsing pattern.
+
+4️⃣ Drop-Off Sessions
+Compared the number of sessions that ended at each stage:
+| Session Type         | Count      |
+| -------------------- | ---------- |
+| Only Views           | 11,907,857 |
+| Cart but No Purchase | 1,091,544  |
+| Completed Purchase   | 645,840    |
+
+🧩 Insight:
+About 9% of sessions reach the cart, and roughly 6% of those result in a purchase — indicating a potential UX or pricing friction.
+
+5️⃣ Category-Level Funnel
+Aggregated funnel performance by product category.
+| Category               | View→Purchase Rate | Cart→Purchase Rate |
+| ---------------------- | ------------------ | ------------------ |
+| Electronics.Smartphone | **7.7%**           | 48.26%             |
+| Appliances.Iron        | 6.05%              | 47.51%             |
+| Kitchen.Microwave      | 5.87%              | 47.82%             |
+
+📱 Insight:
+Smartphones lead in total conversions, while kitchen and home appliances show strong cart-to-purchase follow-through.
+
+6️⃣ Brand-Level Funnel
+Within smartphones, analyzed brand performance.
+| Brand   | View→Purchase | Avg. Purchase Price (USD) |
+| ------- | ------------- | ------------------------- |
+| Samsung | **8.28%**     | 263.98                    |
+| Apple   | 6.93%         | 905.79                    |
+| Xiaomi  | 4.68%         | 202.76                    |
+
+💡 Insight:
+Samsung outperforms Apple in conversion efficiency — users are more likely to complete purchases, despite Apple’s higher price point.
+
+⚙️ Techniques & Tools
+PostgreSQL for all queries
+CTEs for staged funnel logic
+Window Functions for time-based calculations
+CASE WHEN for conditional aggregation
+Aggregate Functions: COUNT(), AVG(), ROUND(), EXTRACT()
+
+💡 Key Takeaways
+The funnel conversion rate is 11.9%, with strong mid-funnel performance but high top-of-funnel drop-offs.
+Smartphones dominate user engagement, followed by small home appliances.
+High-end brands like Apple convert slower but drive higher revenue per purchase.
+Users who proceed to checkout tend to complete purchases within 8 minutes — a sign of quick decision-making behavior.
+
+🧠 Skills Demonstrated
+SQL Analysis · PostgreSQL · CTEs · Window Functions · Funnel Metrics · E-commerce Analytics · Data Storytelling
+
