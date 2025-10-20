@@ -20,9 +20,9 @@ Secure database configuration using .env variables
 
 🧩 Project Structure
 Fullstack_Funnel_App/
-│
+│  
 
-├── app.py        # Main Flask app / API routes
+├──   app.py        # Main Flask app / API routes
 
 ├── db_config.py  # PostgreSQL connection handler
 
@@ -37,6 +37,7 @@ Fullstack_Funnel_App/
 │   └── index.html  # Frontend HTML dashboard
 
 │
+
 ├── /static/
 
 │   ├── style.css   # Dashboard styling
@@ -44,29 +45,28 @@ Fullstack_Funnel_App/
 │   └── script.js   # Plotly chart and API calls
 
 │
-
 └── README_Fullstack.md   # Project documentation
 
 
 ⚙️ Setup Instructions
-1️⃣ Clone the Repository
+
+1️⃣ Clone the repository
 git clone https://github.com/<yourusername>/data-analytics-portfolio.git
 cd data-analytics-portfolio/Fullstack_Funnel_App
 
-2️⃣ Create and Activate a Virtual Environment
-# Windows (PowerShell)
+
+2️⃣ Create and activate virtual environment
 python -m venv .venv
-.venv\Scripts\Activate
+.\.venv\Scripts\activate    # (Windows)
+# or
+source .venv/bin/activate   # (macOS/Linux)
 
-# macOS / Linux
-python3 -m venv .venv
-source .venv/bin/activate
-
-3️⃣ Install Dependencies
+3️⃣ Install dependencies
 pip install -r requirements.txt
 
-4️⃣ Configure Your Database Connection
-Create a .env file (copy .env.example) and update with your PostgreSQL credentials:
+
+4️⃣ Configure your PostgreSQL credentials
+Create a .env file:
 
 DATABASE_HOST=localhost
 DATABASE_PORT=5432
@@ -74,7 +74,7 @@ DATABASE_NAME=dvdrental
 DATABASE_USER=postgres
 DATABASE_PASSWORD=yourpassword
 
-5️⃣ Run the Application
+5️⃣ Run the app
 python app.py
 
 
@@ -82,10 +82,12 @@ Then open your browser and go to:
 👉 http://127.0.0.1:5000/
 
 🧠 API Endpoints
-Endpoint	Description
-/api/funnel	Overall user funnel (view → cart → purchase)
-/api/category	Top 15 categories by conversion rate
-/api/brand	Top smartphone brands by conversion rate
+| Endpoint        | Description                                  |
+| --------------- | -------------------------------------------- |
+| `/api/funnel`   | Overall user funnel (view → cart → purchase) |
+| `/api/category` | Top 15 categories by conversion rate         |
+| `/api/brand`    | Smartphone brand-level funnel                |
+
 
 📊 Tech Stack
 Backend: Flask, psycopg2, python-dotenv
