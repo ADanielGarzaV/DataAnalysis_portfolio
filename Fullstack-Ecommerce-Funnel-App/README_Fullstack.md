@@ -21,18 +21,30 @@ Secure database configuration using .env variables
 🧩 Project Structure
 Fullstack_Funnel_App/
 │
+
 ├── app.py        # Main Flask app / API routes
+
 ├── db_config.py  # PostgreSQL connection handler
+
 ├── .env.example  # Environment variable template
+
 ├── requirements.txt # Python dependencies
+
 │
+
 ├── /templates/
+
 │   └── index.html  # Frontend HTML dashboard
+
 │
 ├── /static/
+
 │   ├── style.css   # Dashboard styling
+
 │   └── script.js   # Plotly chart and API calls
+
 │
+
 └── README_Fullstack.md   # Project documentation
 
 
