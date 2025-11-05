@@ -1,4 +1,5 @@
 🌍 COVID-19 Data Analysis PostgreSQL + Power BI Visualization
+Link to Dataset: https://ourworldindata.org/covid-deaths
 
 This project analyzes global COVID-19 data to explore infection rates, death percentages, and vaccination progress. 
 Data was processed using SQL and visualized through Power BI dashboards for insight-driven reporting.
